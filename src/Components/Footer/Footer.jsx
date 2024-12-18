@@ -4,63 +4,147 @@ import { Grid, Box, Typography } from "@mui/material";
 export default function Footer() {
   return (
     <Grid container>
+    {/* Wrapper Container */}
+    <Grid
+      container
+      spacing={2}
+      sx={{
+        height: { lg: "auto" },
+        marginTop: "40px",
+        backgroundColor: "#181818",
+      }}
+    >
+      {/* Logo Section */}
       <Grid
-        container
-        spacing={2}
+        item
+        sm={4}
+        xs={12}
         sx={{
-          height: { lg: "auto" },
-          marginTop: "40px",
           backgroundColor: "#181818",
+          textAlign: { xs: "center", sm: "left" },
         }}
       >
-        <Grid
-          item
-          xs={4}
-          style={{
-            backgroundColor: "#181818",
+        <Box
+          sx={{
+            width: "auto",
+            paddingLeft: { sm: "24px", xs: "0px" },
           }}
         >
-          <Box
-            sx={{
-              width: "auto",
-              paddingLeft: "24px",
-            }}
-          >
-             <Box sx={{width:'180px'}}>
-                <img style={{width:'100%',height:'100%'}} src="https://res.cloudinary.com/iplus/image/upload/v1731223989/Group_2_kjx1hm.webp" alt="Logo"/>
-
-                </Box>
+          <Box sx={{ width: "180px", margin: "0 auto" }}>
+            <img
+              style={{ width: "100%", height: "100%" }}
+              src="https://res.cloudinary.com/doofsozyy/image/upload/v1734452917/LOGO_vwkjcf.webp"
+              alt="Logo"
+            />
           </Box>
-        </Grid>
-        <Grid item xs={8} sx={{ backgroundColor: "#181818" }}>
-          <Grid container sx={{ paddingLeft: { lg: "25%" } }}>
-            <Grid item xs="auto">
-            <a href="/" style={{textDecoration:'none'}}>
-            <Typography sx={{color:'#FFFFFF',fontSize:'18px'}} >Home</Typography></a>
-            </Grid>
-            <Grid item xs="auto" marginLeft="48px">
-              <Typography  sx={{color:'#FFFFFF',fontSize:'18px'}}>
-                Our Story
+        </Box>
+      </Grid>
+
+      {/* Navigation Links */}
+      <Grid
+        item
+        sm={8}
+        xs={12}
+        sx={{
+          backgroundColor: "#181818",
+          textAlign: { xs: "center", sm: "left" },
+          paddingTop: { xs: "20px", sm: "0px" },
+        }}
+      >
+        <Grid container justifyContent={{ xs: "center", sm: "flex-start" }}>
+          <Grid item xs={12} sm="auto" sx={{ marginBottom: { xs: "12px", sm: "0" } }}>
+            <a href="/" style={{ textDecoration: "none" }}>
+              <Typography sx={{ color: "#FFFFFF", fontSize: "18px" }}>
+                Home
               </Typography>
-            </Grid>
-            <Grid item xs="auto" marginLeft="48px">
-              <Typography  sx={{color:'#FFFFFF',fontSize:'18px'}}>Our Services</Typography>
-            </Grid>
-            <Grid item xs="auto" marginLeft="48px">
-              <Typography  sx={{color:'#FFFFFF',fontSize:'18px'}}>Privacy Policy</Typography>
-            </Grid>
-            <Grid item xs={2} marginLeft="48px">
-                         <a href="/contact" style={{textDecoration:'none'}}>
-             <Typography  sx={{color:'#FFFFFF',fontSize:'18px'}}>Contact Us</Typography> </a>
-            </Grid>
+            </a>
+          </Grid>
+          <Grid
+            item
+            xs={12}
+            sm="auto"
+            sx={{ marginBottom: { xs: "12px", sm: "0" }, marginLeft: { sm: "48px" } }}
+          >
+            <Typography sx={{ color: "#FFFFFF", fontSize: "18px" }}>
+              Our Story
+            </Typography>
+          </Grid>
+          <Grid
+            item
+            xs={12}
+            sm="auto"
+            sx={{ marginBottom: { xs: "12px", sm: "0" }, marginLeft: { sm: "48px" } }}
+          >
+            <Typography sx={{ color: "#FFFFFF", fontSize: "18px" }}>
+              Our Services
+            </Typography>
+          </Grid>
+          <Grid
+            item
+            xs={12}
+            sm="auto"
+            sx={{ marginBottom: { xs: "12px", sm: "0" }, marginLeft: { sm: "48px" } }}
+          >
+            <Typography sx={{ color: "#FFFFFF", fontSize: "18px" }}>
+              Privacy Policy
+            </Typography>
+          </Grid>
+          <Grid
+            item
+            xs={12}
+            sm="auto"
+            sx={{ marginBottom: { xs: "12px", sm: "0" }, marginLeft: { sm: "48px" } }}
+          >
+            <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{textDecoration:'none'}}
+                  href="https://wa.me/94740032488?text=Welcome%20to%20Quantumloom!%20Are%20you%20looking%20for%20help%20with%20your%20University%20or%20any%20IT%20project%3F%20We've%20got%20you%20covered!%20Drop%20your%20project%20Details%20here"
+                >
+              <Typography sx={{ color: "#FFFFFF", fontSize: "18px" }}>
+                Contact Us
+              </Typography>
+            </a>
           </Grid>
         </Grid>
-          <Grid item={1} sx={{marginLeft:'90%',marginBottom:'8px'}}>
-          <Typography sx={{ fontSize: "12px", color: "#FFFFFF" }}>
-          @ QuntamLoom</Typography>
-          </Grid>
-          
+      </Grid>
+
+      {/* Footer Text */}
+      <Grid
+        item
+        xs={12}
+        sx={{
+          textAlign: "center",
+          marginTop: { xs: "16px", sm: "0px" },
+          marginBottom: "8px",
+        }}
+      >
+      <a
+  href="mailto:contact@ql5s.com"
+  target="_blank"
+  rel="noopener noreferrer"
+  style={{ textDecoration: 'none' }}
+>
+  <Typography sx={{ fontSize: '14px', color: '#FFFFFF' }}>
+    contact@ql5s.com
+  </Typography>
+</a>
+        
+      </Grid>
+      <Grid
+        item
+        xs={12}
+        sx={{
+          textAlign: "center",
+          marginTop: { xs: "16px", sm: "0px" },
+          marginBottom: "8px",
+        }}
+      >
+        <Typography sx={{ fontSize: "10px", color: "#FFFFFF" }}>
+        All rights reserved @ QuantumLoom
+        </Typography>
       </Grid>
     </Grid>
+  </Grid>
   );
 }
