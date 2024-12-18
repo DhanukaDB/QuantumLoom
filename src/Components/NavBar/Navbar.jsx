@@ -121,7 +121,7 @@ const Navbar = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   style={{textDecoration:'none'}}
-                  href="https://wa.me/94740032488?text=Welcome%20to%20Quantumloom!%20Are%20you%20looking%20for%20help%20with%20your%20University%20or%20any%20IT%20project%3F%20We've%20got%20you%20covered!%20Drop%20your%20project%20Details%20here"
+                  href="https://api.whatsapp.com/send/?phone=94740032488&app_absent=0"
                 >
                   <CustomButtonNew
                     variant="contained"
@@ -354,7 +354,7 @@ const Navbar = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   style={{textDecoration:'none'}}
-                  href="https://wa.me/94740032488?text=Welcome%20to%20Quantumloom!%20Are%20you%20looking%20for%20help%20with%20your%20University%20or%20any%20IT%20project%3F%20We've%20got%20you%20covered!%20Drop%20your%20project%20Details%20here"
+                  href="https://api.whatsapp.com/send/?phone=94740032488&app_absent=0"
                 >
 <Grid container backgroundColor="rgba(174, 146, 183, 0.6)">
             <MenuItem key="profile">
